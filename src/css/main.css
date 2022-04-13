@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+/* @font-face {
+    font-family: 'Pixel';
+    src: url('src/font/Pixel.ttf') */
+/* } */
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color: #0D262D;
+    color: #fff;
+    height: 100%;
+}
+[flappy]{
+    position:relative;
+    border :5px solid dodgerblue;
+    height: 700px;
+    width:1200px;
+    /* margin:10px; */
+    background-color: deepskyblue;
+    overflow:hidden;
+    margin-bottom: 15px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+.bird{
+    position:absolute;
+    width:45px;
+    left:calc(50% - 30px);
+}
+.barriers{
+    position:absolute;
+    top:0;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.barrier{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.barrier .barrier_border{
+    height:30px;
+    width:130px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border: 2px solid black;
+}
+.barrier .barrier_body{
+    height:70px;
+    width:110px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.progress{
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-family: 'Pixel';
+    z-index:100;
+    font-size: 50px;
+}
+
+
